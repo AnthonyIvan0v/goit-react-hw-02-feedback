@@ -1,4 +1,3 @@
-import LeaveFeedback from 'modules/LeaveFeedback/LeaveFeedback';
 import Feedback from 'modules/Feedback/Feedback';
 export const App = () => {
   return (
