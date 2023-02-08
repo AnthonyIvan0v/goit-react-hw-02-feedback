@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 import styles from './feedbackOptions.module.css';
 
@@ -17,3 +18,8 @@ export default function FeedbackOptions({ options, leaveFeedback }) {
   });
   return <ul className={styles.list}>{elements}</ul>;
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  leaveFeedback: PropTypes.func.isRequired,
+};
